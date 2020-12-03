@@ -1,0 +1,33 @@
+ML Codes in R -- Bharatendra Rai
+Class 1- Multiple Linear Regression in R
+What is Multiple Linear Regression
+Do a scatterplot- tells you if variables are related.
+It could be positive or negative linear. 
+y= a + b1x1 + b2x2 +...
+
+Using vehicle data-
+labour cost = a + b1(labour hours) + b2(mileage)
+If suppose mileage is not really significant it can be dropped off.
+
+lc= 1.375+ -0.0000847*mileage + 73.55*lh
+
+Probability value in summary is the most important. Shows the significance.
+Mileage is not playing a role. 
+Delete it from further analysis.
+
+p-value= 0.001
+(1-p)= 1-0.001= 0.999 or 99.99 percent
+more than 95% is really good
+labour hour is really significant
+Confidence level for mileage is 1-0.2= 0.8, so 80% confidence.
+Individual variables values
+
+F-Statistic
+P-values below- 1- small no.
+R Square- 
+Multiple R-Squared- 0.951- contributes 95% to variability. 2% or so, no variability. Remaining 5% is the part that can be addressed by other variables. 
+Adjusted R-Squared- 
+
+lc= -0.236 +73.5088lh
+
+AnoVa-Analysis of variance
