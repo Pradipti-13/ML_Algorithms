@@ -1,0 +1,32 @@
+ML Codes in R -- Bharatendra Rai
+Class 2- Logistic Regression in R
+What is Logistic Regression
+Goal for this class is to classify student applications as admit or reject.
+The target or dependent variable is Admit (0- no, 1- yes)
+Predictors or independent variables are GRE, GPA and Rank.
+Dependent- Not continuous, but only categorical.
+
+A two way table of factor variables is made to ensure that cells do not have zero values.
+
+ln(p/1-p)= a+ b1x1+ b2x2+ .....bnxn= y
+p-- probability of accepting
+1-p-- probability of rejecting
+ln(p/1-p)= y
+p/1-p= eˆy, p= eˆy/1+eˆy
+
+Equation using final model.
+ln(p/1-p)= y= -4.727 + 1.3735*gpa + -.5712*rank2 + -1.1645*rank3 + -1.5642*rank4
+When we want to write the equation for rank 1, then last three terms will become zero. If we want to write rank 3, rank 2 and rank 4 will become zero.
+
+For the first candidate, the gpa is 3.61 and rank is 3. So, y= -4.727 + 1.3735*3.61 + -1.1645*1
+y= -0.933165 (if you don't put type= "response", this is what you get)
+p= e^-0.933165/1+ e^-0.933165
+p= 0.2822 (this is what you get when you put type= "response")
+
+For students coming from rank 3 and 4 schools, the coefficient of rank is more negative indicating that if the rank is lower, the odds of the student getting accepted is much lower.
+The gpa is positive. So, it means possibility of admission goes up with getting a better gpa.
+
+Confusion Matrix shows correct classifications along the diagonal.
+
+Goodness of fit???
+
