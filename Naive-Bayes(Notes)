@@ -1,0 +1,38 @@
+ML Codes in R- Bharatendra Rai
+Class 4- Naive-Bayes-Classifier
+Application of Naive-Bayes Examples-
+Email: Classifying as Spam/Not Spam
+Tweet Sentiment: Positive/Negative
+Face Recognition
+Classifying News Articles
+
+In Cross tabulation or xtabs, it is fine if the frequency is anything more than 5.
+
+To make a Naive-Bayes Classifier, we will have to ensure that the independent variables are not highly correlated to each other.
+
+Naive-Bayes Classifer is based on Bayes' Theorem.
+P(A/B)= (P(A)*P(B/A))/P(B)
+Here both A and B are independent events.
+Example
+
+P(Admit=1/Rank=1)= 
+(P(Admit=1)* P(Rank=1/Admit=1))/P(Rank=1)
+
+P(Admit=1)= Number of students admitted/ Total number of students= 127/400= 0.3175
+
+P(Rank=1)= Number of students getting rank 1/Total number of students= 61/400= 0.1525
+
+P(Rank=1/Admit=1)= No of students admitted and got rank 1/ Number of students who got admitted= 33/127= 0.2598425
+
+P(Admit=1/Rank=1)= (0.3175*0.2598425)/0.1525= 0.5409836
+
+Normal Distribution- Mean and standard deviation values given you can find probability anywhere
+
+Mean and standard deviation values for numeric values.
+Rank is a categorical variable- so you get the probability
+
+P(Rank=1/Admit=0)=0.103
+P(Rank=1/Admit=0)= Number of students who had rank 1 but not admitted/ Number of students who did not get admitted.= 28/273= 0.1025641= 0.103
+P(Rank=1/Admit=1)= 0.245
+P(Rank=1/Admit=1)= Number of students who had rank 1 and got admitted/ Number of students who got admitted= 0.2598425= 0.26
+
