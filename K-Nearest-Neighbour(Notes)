@@ -1,0 +1,51 @@
+ML- Bharatendra Rai
+Class- 5- K-Nearest Neighbour
+K-Nearest Neighbour is not to be confused with K-Means Clustering. Both of these are different methods.
+K-Nearest Neighbour is a Supervised Learning Algorithm, whereas K-Means Clustering is a Unsupervised Learning Model.
+
+In pattern recognition, the K-Nearest Neighbours Algorithm is a non-parametric method used for classification and regression. 
+
+Scatterplot of GRE and GPA. 
+In K nearest neighbours, we look at the k nearest neighbours, and then make predictions for our new point.
+K as odd- for no ties.
+Regression- mean of k numbers.
+Distance measure- 
+Euclidian method- to understand how far the neighbours are.
+d= sqrt((q1-p1)^2+ (q2-p2)^2)- 2D
+
+Manhattan method-
+sigma(abs(pi-qi))
+
+Minkowski method- 
+sigma(abs(pi-qi)^n)^1/n
+
+We use Euclidian methods.
+
+Standardization is really important as every data variable will have different range of value.GPA varies between 0 and 5 whereas GRE scores are in the range of 200-600
+Normalisation or z score (-3 to +3)- subtract mean divide by sd.
+min-max(0 to 1)- subtract the max from each number and divide by (min-max)
+
+Applications of K Nearest Neighbours-
+1. Recommendation Systems
+2. Anomaly Detection
+3. Text categorisation
+4. Finance
+5. Medicine
+
+K Nearest Neigbour to Classification and Regression.
+
+Example-1- KNN using Classification
+trainControl--- from caret package
+method= repeatedcv--- repeated cross validation
+number of resampling iterations-- 10
+repeats--- repeat the whole thing 3 times
+
+3 predictors
+2 classes
+In each cross-validation- the sample was divided into 10 parts or 10 folds and 9 of the values were taken to train the model and the model was accessed on the one value left.
+This whole thing was repeated 3 times.
+Accuracy and Kappa values have been given.
+Accuracy was used to select the optimal model using the largest value. The final value used for the model was 33.
+
+The model was improved fromm the baseline, but there is a scope for further improvement. 
+We choose model on Accuracy. We can also use ROC for the model.
